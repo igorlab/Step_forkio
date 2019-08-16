@@ -124,7 +124,7 @@ gulp.task('browserSync', function () {
     browserSync.init(files, {
         server: {
             baseDir: path.dist.html,
-            index: "forkito.out.html"
+            index: "index.out.html"
         }
     });
 });
