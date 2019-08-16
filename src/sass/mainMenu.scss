@@ -1,7 +1,15 @@
+@import 'mixins';
 .container {
+  width: 100%;
+
   header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     //border: 1px #788794 solid;
     .headerNav {
+      width: 100%;
       position: relative;
       //@include font-used(12px, 500);
       background-color: #27262a;
@@ -12,6 +20,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding: 0 16px;
 
       &__logoImg {
         color: #8d81ac;
@@ -25,30 +34,34 @@
         right: 0;
         top: 100%;
         display: none;
-        margin: 0 5px 0;
-        width: 100%;
+        margin: 0 10px;
+        width: 94%;
 
         &--active320 {
           display: block;
-
         }
-
 
         .menuList {
           background-color: #333333;
           list-style-type: none;
-          margin-bottom: 5px;
+          padding-bottom: 10px;
 
           li {
             font-family: 'Montserrat', sans-serif;
-            font-size: 26px;
-            line-height: 106px;
-            font-weight: 400;
+            @include font-used(26px, 400);
+
+            color: #ffffff;
+
+            border-bottom: 2px solid #3B3B3B;
+            a {
+              padding: 10px 24px;
+              line-height: 88px;
+              border-left: 12px solid #333333;
+            }
 
             :hover {
               color: #8d81ac;
-              border-bottom: 1px solid green;
-              border-left: 8px solid green;
+              border-left: 12px solid #8d81ac;
             }
 
           }
@@ -56,11 +69,39 @@
       }
 
       &__toggleBar {
-        i {
-          font-size: 30px;
-        }
+          @include backgroundImg ('../img/burger-menu-icon.png', 26px, 21px);
       }
 
+    }
+    .headerInfo {
+      width: 100%;
+      font-family: 'Montserrat', sans-serif;
+      background: url('../img/headerInfo.png') 55% -100px;
+      text-align: center;
+      h2 {
+        padding-top: 65px;
+        color: white;
+        line-height: 20px;
+        @include font-used(48px, 700);
+      }
+
+      h3 {
+        color: #8D81AC;
+        @include font-used(18px, 400);
+        line-height: 34px;
+        padding: 20px 66px;
+      }
+      h4 {
+        color: #848E97;
+        @include font-used(14px, 400);
+        line-height: 20px;
+        padding-bottom: 404px;
+      }
+    }
+    .forkitoButton--after {
+      margin-top: -20px;
+      font-size: 18px;
+      line-height: 20px;
     }
   }
 }
