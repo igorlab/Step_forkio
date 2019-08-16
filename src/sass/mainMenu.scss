@@ -34,8 +34,8 @@
         right: 0;
         top: 100%;
         display: none;
-        margin: 0 5px 0;
-        width: 100%;
+        margin: 0 10px;
+        width: 94%;
 
         &--active320 {
           display: block;
@@ -55,16 +55,12 @@
             border-bottom: 2px solid #3B3B3B;
             a {
               padding: 10px 24px;
-              line-height: 106px;
+              line-height: 88px;
               border-left: 12px solid #333333;
             }
 
             :hover {
-              font-family: 'Montserrat', sans-serif;
-              @include font-used(26px, 400);
-              line-height: 106px;
               color: #8d81ac;
-
               border-left: 12px solid #8d81ac;
             }
 
