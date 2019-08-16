@@ -1,0 +1,13 @@
+@import '_mixins';
+
+.container{
+  .forkitoButton {
+    @include font-used(15px, 700);
+    background-color: #8d81ac;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 100px;
+    font-family: "Montserrat", sans-serif !important;
+  }
+}
