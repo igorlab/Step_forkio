@@ -26,6 +26,7 @@
       &__logoImg {
         color: #8d81ac;
         @include backgroundImg ('../img/LogoHeader.png', 43px, 41px);
+        background-repeat: no-repeat;
       }
 
       &__menu {
@@ -80,7 +81,7 @@
     .headerInfo {
       width: 100%;
       font-family: 'Montserrat', sans-serif;
-      background: url('../img/headerInfo.png') 55% -100px;
+      background: url('../img/headerInfo.png') 50% -200px;
       text-align: center;
 
       h2 {
@@ -111,6 +112,45 @@
       line-height: 20px;
     }
   }
+  .aboutFork {
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background-image: url('../img/About_Fork.png');
+    background-repeat: no-repeat;
+    @include font-used(36px, 700);
+    text-align: center;
+    padding-top: 61px;
+    margin-bottom:49px;
+
+    h3 {
+      display: none;
+    }
+    .aboutForkFlex {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-top:49px;
+      align-items: center;
+
+      justify-items: center;
+      text-align: center;
+
+      .blockClients {
+        width: 252px;
+        &__description {
+          margin: 37px 0 40px;
+
+
+          font-size: 16px;
+          line-height: 24px;
+          color: #ffffff;
+          font-family: "Lato";
+          font-weight: 400;
+          font-style: italic;
+          text-align: center;
+        }
+      }
+    }
+  }
 }
 
 
@@ -127,7 +167,6 @@
         height: 100px;
 
         &__menu {
-
           //position: absolute;
           display: flex;
           justify-content: space-between;
@@ -172,6 +211,48 @@
 
       }
 
+    }
+    .aboutFork {
+      //font-family: 'Montserrat', sans-serif;
+      //color: #ffffff;
+      //background-image: url('../img/About_Fork.png');
+      @include font-used(42px, 700);
+      //text-align: center;
+      //padding-top: 90px;
+      //margin-bottom:49px;
+
+      h3 {
+        display: block;
+        @include font-used(14px, 400);
+        color: rgba(162, 145, 165, 255);
+        text-align: center;
+        margin: 0 80px 0;
+        padding-bottom: 40px;
+      }
+
+      .aboutForkFlex {
+        //display: grid;
+        grid-template-columns: 1fr 1fr;
+        //margin-top:49px;
+        //align-items: center;
+        //
+        //justify-items: center;
+        //text-align: center;
+
+        .blockClients {
+          //width: 252px;
+          &__description {
+            //margin: 37px 0 40px;
+            //font-size: 16px;
+            //line-height: 24px;
+            //color: #ffffff;
+            //font-family: "Lato";
+            //font-weight: 400;
+            //font-style: italic;
+            //text-align: center;
+          }
+        }
+      }
     }
   }
 }
@@ -223,6 +304,40 @@
 
       }
 
+    }
+
+    .aboutFork {
+      //font-family: 'Montserrat', sans-serif;
+      //color: #ffffff;
+      //background-image: url('../img/About_Fork.png');
+      //@include font-used(36px, 700);
+      //text-align: center;
+      //padding-top: 61px;
+      //margin-bottom:49px;
+
+      .aboutForkFlex {
+        //display: grid;
+        grid-template-columns:  1fr 1fr 1fr;
+        //margin-top:49px;
+        //align-items: center;
+        //
+        //justify-items: center;
+        //text-align: center;
+
+        .blockClients {
+          //width: 252px;
+          &__description {
+            //margin: 37px 0 40px;
+            //font-size: 16px;
+            //line-height: 24px;
+            //color: #ffffff;
+            //font-family: "Lato";
+            //font-weight: 400;
+            //font-style: italic;
+            //text-align: center;
+          }
+        }
+      }
     }
   }
 }
