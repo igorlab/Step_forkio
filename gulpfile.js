@@ -13,7 +13,6 @@ const autoprefixer = require('gulp-autoprefixer');
 const imagemin = require('gulp-imagemin');
 const plumber = require('gulp-plumber');
 
-
 const path = {
     dist: {
         html:  'dist/',
