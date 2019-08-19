@@ -8,12 +8,367 @@ body, html {
 
 }
 
-button, button:active, button:focus {
+button, button:active, button:focus, button:hover {
   outline: none;
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
   color: inherit;
 }
+.revolutionary{
+  color: #635c73;
+  padding: 0 10px 88px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
 
+  &__text{
+    &--under-button{
+      padding-top: 11px;
+      font-size: 14px;
+      font-weight: normal;
+      padding-bottom: 66px;
+    }
+    &--big {
+      padding-bottom: 12px;
+      font-size: 25px;
+      font-weight: bold;
+    }
+    &--small {
+      font-size: 14px;
+      font-family: 'Lato', sans-serif;
+      padding: 0 14px 12px;
+      line-height: 20px;
+    }
+  }
+
+  &-counter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 18px;
+    &-item {
+      margin: 21px 5px 0;
+      display: flex;
+      height: 24px;
+      border: 1px #9b9b95 solid;
+      border-radius: 3px;
+      background-color: white;
+      font: 700 11px Arial;
+      color: black;
+      overflow: hidden;
+      &--last{
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      &__button{
+        height: 26px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        padding: 0 10px ;
+        margin-top: -1px;
+        margin-left: -1px;
+
+      }
+      &__sum{
+        width: 28px ;
+        padding: 5px 10px 0;
+      }
+    }
+  }
+}
+.octicon{
+  padding-right: 3px;
+}
+.advantages{
+  background-color: #f4f4f4;
+  font-family: 'Montserrat', sans-serif;
+  &__title{
+    padding: 28px 42px 34px;
+    color: #8d81ac;
+    font-size: 31px;
+    font-weight: bold;
+    text-align: center;
+  }
+  &-item{
+    text-align: center;
+    padding: 0 25px 36px;
+    color: #848e97;
+    &__big-text{
+      color: black;
+      font-size: 16px;
+      padding: 20px 0 10px;
+    }
+    &__small-text{
+      font-size: 14px;
+      line-height: 21px;
+      font-family: 'Lato', sans-serif;
+    }
+  }
+  &__picture{
+    margin-top: 20px;
+    height: 381px;
+    background: url("../img/editor@1X.png");
+    background-size: 716px 381px;
+  }
+}
+.pricing{
+  background-color: #4b3b4e;
+  color: white;
+  padding: 0 10px 93px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  &__title{
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 42px;
+    padding-bottom: 33px;
+  }
+  &-items-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  &-item{
+    margin: 14px 14px 0;
+    height: 457px;
+    width: 257px;
+    background: rgba(95, 81, 97, 0.3);
+    position: relative;
+    &__title{
+      height: 58px;
+      text-align: center;
+      padding-top: 39px;
+      font-size: 24px;
+      background: rgba(104, 91, 106, 0.3);
+      &--bigger{
+        background: rgba(58, 45, 61, 0.3);
+        height: 66px;
+        padding-top: 45px;
+     }
+    }
+    &__price{
+      padding-top: 24px;
+      font-size: 60px;
+      font-weight: bold;
+      &:first-letter{
+        font-weight: 400;
+      }
+      &--bigger{
+        font-size: 83px;
+        padding-top: 3px;
+      }
+    }
+    &__first-text{
+      padding: 12px 0 26px;
+      color: #8f8691;
+      font-size: 14px;
+      &--bigger{
+        padding: 7px 0 35px;
+      }
+    }
+    &__line{
+      display: inline-block;
+      height: 5px;
+      width: 60px;
+      background-color: #8d81ac;
+    }
+    &__second-text{
+      padding: 24px 20px 0;
+      line-height: 26px;
+      color:  #d0cbd0;
+      &--bigger{
+        padding-top: 29px;
+        line-height: 32px;
+      }
+    }
+    &__button{
+      font-size: 15px;
+      font-family: "Montserrat", sans-serif;
+      background-color: #776b79;
+      color: #d0cbd0;
+      border: none;
+      padding: 12px 37px;
+      border-radius: 100px;
+      position: absolute;
+      left: 48px;
+      bottom: 38px;
+      &:hover{
+        background-color: #d0cbd0;
+        color: #786b79;
+      }
+      &--bigger{
+        padding: 16.5px 49px;
+        font-size: 16px;
+        left: 51px;
+        bottom: 47px;
+      }
+    }
+    &--bigger{
+      margin: 14px 0 0;
+      background: rgba(65, 51, 68, 0.3);
+      height: 560px;
+      width: 291px;
+    }
+  }
+}
+@media(max-width: 319px){
+ body{
+   width: 320px;
+ }
+}
+@media (min-width: 481px) {
+  .revolutionary{
+    padding-bottom:  97px;
+
+    &__text{
+      &--under-button{
+        padding-top: 24px;
+        padding-bottom: 84px;
+      }
+      &--big {
+        display: inline-block;
+        font-size: 41px;
+      }
+      &--small {
+        display: inline-block;
+        font-size: 21px;
+        padding: 9px 24px 12px;
+        line-height: 32px;
+      }
+    }
+    &-counter {
+      &-item {
+        &--last{
+          margin: 21px 5px 0;
+        }
+
+      }
+    }
+  }
+  .advantages {
+    padding-left: 10px;
+    padding-bottom: 23px;
+    &__title {
+      padding: 46px 42px 58px 32px;
+      font-size: 40px;
+    }
+      &-item {
+        padding: 0 36px 54px 20px;
+        display: flex;
+        text-align: left;
+        &__img{
+          width: 111px;
+          flex-shrink: 0;
+          text-align: center;
+        }
+
+        &__big-text {
+          padding: 0 0 10px 24px;
+        }
+
+        &__small-text {
+          padding-left: 24px;
+          font-size: 17px;
+          font-weight: 300;
+        }
+      }
+
+      &__picture {
+        margin-top: 0;
+        height: 519px;
+        background: url("../img/editor@1X.png");
+        background-size: 977px 519px;
+      }
+    }
+  .pricing {
+    background-color: #4b3b4e;
+    background-image: url("../img/back.png");
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    &__title{
+      font-size: 44px;
+      padding-bottom: 46px;
+    }
+    &-item{
+      margin:  0 14px 30px;
+      &--last{
+        margin: 58px 11px 0 11px;
+      }
+      &--bigger{
+        margin: 14px 0 0;
+      }
+    }
+  }
+  }
+@media (min-width: 993px) {
+  .revolutionary{
+    padding-bottom:  72px;
+    &__text{
+      &--under-button{
+        padding-bottom: 53px;
+      }
+      &--big {
+        font-size: 54px;
+      }
+      &--small {
+        font-size: 21px;
+        padding: 6px 130px 10px;
+      }
+    }
+  }
+  .advantages {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    position: relative;
+    &__title {
+      padding: 0 0 58px 0;
+      font-size: 48px;
+      float: right;
+      width: 55%;
+    }
+    &-item {
+      padding: 28px 0 12px 0;
+      width: 43%;
+    }
+    &__picture {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 56%;
+    }
+  }
+  .pricing {
+    background-color: #4b3b4e;
+    background-size: 100% 100%;
+    &-items-wrapper{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    &__title{
+      font-size: 47px;
+      padding-bottom: 75px;
+    }
+    &-item{
+      margin: 50px 7px 0;
+      &--last{
+        margin: 50px 7px 0;
+      }
+      &--bigger{
+        margin: 0 7px 0;
+      }
+    }
+  }
+}
+@media (min-width: 1201px) {
+    body {
+      margin-left: auto;
+      margin-right: auto;
+      width:  1200px;
+  }
+
+}
