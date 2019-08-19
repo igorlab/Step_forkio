@@ -17,6 +17,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+body .container .aboutFork{
+  background-color: #4b3b4e;
+  margin-bottom: -1px;
+}
 .revolutionary{
   color: #635c73;
   padding: 0 10px 88px;
@@ -117,14 +121,22 @@ a {
 .pricing{
   background-color: #4b3b4e;
   color: white;
-  padding: 0 10px 93px;
+  padding: 50px 10px 93px;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  &__line{
+    background-color: #645766;
+    height: 2px;
+    width: 90%;
+    max-width: 780px;
+    display: inline-block;
+  }
   &__title{
     font-size: 28px;
     font-weight: bold;
     line-height: 42px;
     padding-bottom: 33px;
+    padding-top: 58px;
   }
   &-items-wrap{
     display: flex;
@@ -289,6 +301,12 @@ a {
     background-image: url("../img/back.png");
     background-size: 100% 50%;
     background-repeat: no-repeat;
+    &__line{
+      background-color: #645766;
+      height: 2px;
+      width: 80%;
+      display: inline-block;
+    }
     &__title{
       font-size: 44px;
       padding-bottom: 46px;
@@ -341,6 +359,11 @@ a {
       width: 56%;
     }
   }
+  body .container .aboutFork{
+    background-color: #4b3b4e;
+    margin-bottom: -1px;
+    padding-top: 90px;
+  }
   .pricing {
     background-color: #4b3b4e;
     background-size: 100% 100%;
@@ -351,6 +374,7 @@ a {
     }
     &__title{
       font-size: 47px;
+      padding-top: 73px;
       padding-bottom: 75px;
     }
     &-item{
