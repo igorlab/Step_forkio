@@ -365,7 +365,14 @@ body .container header .headerNav{
 @media (min-width: 993px) {
   body .container header .headerNav__menu{
     position: static;
-    margin-top: 10px;
+    margin: 10px 0 0 18%;
+  }
+   .container header .headerNav .forkitoButton {
+    font-size: 16px;
+    padding: 10px 37px;
+  }
+  body .container header .headerNav__menu .menuList li a{
+    padding: 0 10px 0;
   }
   body .container header .headerNav{
     height: 100px;
