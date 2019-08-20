@@ -1,4 +1,4 @@
-# forkito
+# forkio
 
 List of used technologies:
 
@@ -6,7 +6,6 @@ List of used technologies:
 - Adaptive layout 
 - The streaming build system GULP
 - Version control by GitHub
-- IDE WebStorm  ????
 
 Team: Maria Morozuk & Igor Tkachenko
 
