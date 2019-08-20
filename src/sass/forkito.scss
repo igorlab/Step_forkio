@@ -21,6 +21,19 @@ body .container .aboutFork{
   background-color: #4b3b4e;
   margin-bottom: -1px;
 }
+.headerNav__logoText{
+  display: none;
+}
+body .container header .headerNav__logoImg{
+  display: inline-block;
+}
+body .container header .headerNav{
+  margin-bottom: -1px;
+}
+.headerNav-logo{
+  display: flex;
+  align-items: center;
+}
 .revolutionary{
   color: #635c73;
   padding: 0 10px 88px;
@@ -233,6 +246,33 @@ body .container .aboutFork{
  }
 }
 @media (min-width: 481px) {
+  body .container header .headerNav{
+    padding-top: 22px;
+    align-items: start;
+    height: 118px;
+  }
+
+  body .container header .headerNav__menu .menuList li a{
+    padding: 0 2.2vw 0;
+  }
+  body .container header .headerNav__menu{
+    top: 70%;
+    left: 0;
+    display: block;
+    text-align: center;
+  }
+
+  .headerNav__logoText{
+    color:#8d81ac;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-left: 17px;
+    display: inline-block;
+  }
+
+
+
   .revolutionary{
     padding-bottom:  97px;
 
@@ -323,6 +363,14 @@ body .container .aboutFork{
   }
   }
 @media (min-width: 993px) {
+  body .container header .headerNav__menu{
+    position: static;
+    margin-top: 10px;
+  }
+  body .container header .headerNav{
+    height: 100px;
+    padding-top: 29px;
+  }
   .revolutionary{
     padding-bottom:  72px;
     &__text{
@@ -387,6 +435,7 @@ body .container .aboutFork{
       }
     }
   }
+
 }
 @media (min-width: 1201px) {
     body {
