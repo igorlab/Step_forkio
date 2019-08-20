@@ -27,6 +27,12 @@
         color: #8d81ac;
         @include backgroundImg ('../img/LogoHeader.png', 43px, 41px);
         background-repeat: no-repeat;
+        //&:hover {
+        //  filter: invert(2);
+        //}
+      }
+      &__logoText:hover {
+        color: white;
       }
 
       &__menu {
