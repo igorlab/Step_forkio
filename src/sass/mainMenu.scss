@@ -14,7 +14,7 @@
       position: relative;
       //@include font-used(12px, 500);
       background-color: #27262a;
-      color: white;
+      color: #ffffff;
       height: 103px;
       box-sizing: border-box;
       //padding-left: 19px;
@@ -115,7 +115,8 @@
   .aboutFork {
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
-    background-image: url('../img/About_Fork.png');
+    background: url('../img/About_Fork.png') 50% 0;
+    //background-image: url('../img/About_Fork.png') 0 -10px;
     background-repeat: no-repeat;
     @include font-used(36px, 700);
     text-align: center;

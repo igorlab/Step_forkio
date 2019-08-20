@@ -15,21 +15,21 @@ const plumber = require('gulp-plumber');
 
 const path = {
     dist: {
-        html:  'dist/',
+        // html:  'dist/',
         js:    'dist/js/',
         css:   'dist/css/',
         img:   'dist/img/',
         fonts: 'dist/fonts/'
     },
     src: {
-        html:  'src/*.html',
+        html:  '*.html',
         js:    'src/js/*.js',
         style: 'src/sass/*.scss',
         img:   'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },
     watch: {
-        html:  'src/**/*.html',
+        // html:  '*.html',
         js:    'src/js/**/*.js',
         style: 'src/sass/**/*.scss',
         img:   'src/img/**/*.*',
@@ -57,13 +57,13 @@ gulp.task("scripts-dev", function() {
 });
 
 // Копирование файлов HTML в папку dist
-gulp.task("html", function() {
-    return gulp.src(path.src.html)
-        .pipe(plumber())
-        .pipe(rename({ suffix: '.out' }))
-
-        .pipe(gulp.dest(path.dist.html));
-});
+// gulp.task("html", function() {
+//     return gulp.src(path.src.html)
+//         .pipe(plumber())
+//         .pipe(rename({ suffix: '.out' }))
+//
+//         .pipe(gulp.dest(path.dist.html));
+// });
 
 
 gulp.task('img', function() {
@@ -104,17 +104,16 @@ gulp.task("sass-dev", function() {
 
 // Задача слежения за измененными файлами
 gulp.task("watch", ['browserSync'], function() {
-    gulp.watch("src/*.html", ["html"]);
+     // gulp.watch("./*.html", ["html"]);
     gulp.watch("src/js/*.js", ["scripts-dev"]);
     gulp.watch("src/sass/*.scss", ["sass-dev"]);
     gulp.watch("src/img/*.*", ["img"]);
     gulp.watch('src/**/*.*').on('change', browserSync.reload);
-    //gulp.watch("src/img/*.+(jpg|jpeg|png|gif)", ["imgs"]);
 });
 
 gulp.task('browserSync', function () {
     let files = [
-        '*.html',
+        './*.html',
         'css/**/*.css',
         'js/**/*.js',
         'sass/**/*.scss'
@@ -122,8 +121,8 @@ gulp.task('browserSync', function () {
 
     browserSync.init(files, {
         server: {
-            baseDir: path.dist.html,
-            index: "index.out.html"
+            baseDir: "./",
+            index: "index.html"
         }
     });
 });
@@ -135,6 +134,6 @@ gulp.task('clean', function() {
 });
 
 
-gulp.task("dev", ["html", "sass-dev", "scripts-dev", "watch", "img"]); // sass-dev
+gulp.task("dev", ["sass-dev", "scripts-dev", "watch", "img"]); // sass-dev
 
-gulp.task("build", ["clean", "html", "sass", "scripts", "img"]);
+gulp.task("build", ["clean", "sass", "scripts", "img"]);
