@@ -259,7 +259,6 @@ body .container header .forkitoButton--after {
     width: 100%;
     max-width: 315px;
   }
-
   body .container header .headerNav__menu .menuList li a{
     padding: 0 2.2vw 0;
   }
@@ -272,9 +271,8 @@ body .container header .forkitoButton--after {
   body .container header .forkitoButton--after {
     font-size: 21px;
     margin-top: -33px;
-    padding: 21px 63px;
+    padding: 21px 63px;                                                        //   <---------------------------
   }
-
   .headerNav__logoText{
     color:#8d81ac;
     font-size: 24px;
@@ -283,9 +281,6 @@ body .container header .forkitoButton--after {
     margin-left: 17px;
     display: inline-block;
   }
-
-
-
   .revolutionary{
     padding-bottom:  97px;
 
