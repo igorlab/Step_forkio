@@ -30,6 +30,10 @@ body .container header .headerNav__logoImg{
 body .container header .headerNav{
   margin-bottom: -1px;
 }
+body .container header .forkitoButton--after {
+  margin-top: -22.5px;
+  padding: 12.5px 31.5px;
+}
 .headerNav-logo{
   display: flex;
   align-items: center;
@@ -251,6 +255,10 @@ body .container header .headerNav{
     align-items: start;
     height: 118px;
   }
+  body .container .aboutFork .aboutForkFlex .blockClients {
+    width: 100%;
+    max-width: 315px;
+  }
 
   body .container header .headerNav__menu .menuList li a{
     padding: 0 2.2vw 0;
@@ -260,6 +268,11 @@ body .container header .headerNav{
     left: 0;
     display: block;
     text-align: center;
+  }
+  body .container header .forkitoButton--after {
+    font-size: 21px;
+    margin-top: -33px;
+    padding: 21px 63px;
   }
 
   .headerNav__logoText{
@@ -278,7 +291,7 @@ body .container header .headerNav{
 
     &__text{
       &--under-button{
-        padding-top: 24px;
+        padding-top: 15px;
         padding-bottom: 84px;
       }
       &--big {
@@ -377,6 +390,9 @@ body .container header .headerNav{
   body .container header .headerNav{
     height: 100px;
     padding-top: 29px;
+  }
+  body .container .aboutFork .aboutForkFlex .blockClients {
+    padding-bottom: 60px;
   }
   .revolutionary{
     padding-bottom:  72px;
