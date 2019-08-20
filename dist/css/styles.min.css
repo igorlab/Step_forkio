@@ -1,0 +1,803 @@
+@charset "UTF-8";
+.container .forkitoButton {
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #8d81ac;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 100px;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+button, button:active, button:focus, button:hover {
+  outline: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body .container .aboutFork {
+  background-color: #4b3b4e;
+  margin-bottom: -1px;
+}
+
+.headerNav__logoText {
+  display: none;
+}
+
+body .container header .headerNav__logoImg {
+  display: inline-block;
+}
+
+body .container header .headerNav {
+  margin-bottom: -1px;
+}
+
+body .container header .forkitoButton--after {
+  margin-top: -22.5px;
+  padding: 12.5px 31.5px;
+}
+
+.headerNav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.revolutionary {
+  color: #635c73;
+  padding: 0 10px 88px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.revolutionary__text--under-button {
+  padding-top: 11px;
+  font-size: 14px;
+  font-weight: normal;
+  padding-bottom: 66px;
+}
+
+.revolutionary__text--big {
+  padding-bottom: 12px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.revolutionary__text--small {
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+  padding: 0 14px 12px;
+  line-height: 20px;
+}
+
+.revolutionary-counter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 18px;
+}
+
+.revolutionary-counter-item {
+  margin: 21px 5px 0;
+  display: flex;
+  height: 24px;
+  border: 1px #9b9b95 solid;
+  border-radius: 3px;
+  background-color: white;
+  font: 700 11px Arial;
+  color: black;
+  overflow: hidden;
+}
+
+.revolutionary-counter-item--last {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.revolutionary-counter-item__button {
+  height: 26px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin-top: -1px;
+  margin-left: -1px;
+}
+
+.revolutionary-counter-item__sum {
+  width: 28px;
+  padding: 5px 10px 0;
+}
+
+.octicon {
+  padding-right: 3px;
+}
+
+.advantages {
+  background-color: #f4f4f4;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.advantages__title {
+  padding: 28px 42px 34px;
+  color: #8d81ac;
+  font-size: 31px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.advantages-item {
+  text-align: center;
+  padding: 0 25px 36px;
+  color: #848e97;
+}
+
+.advantages-item__big-text {
+  color: black;
+  font-size: 16px;
+  padding: 20px 0 10px;
+}
+
+.advantages-item__small-text {
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'Lato', sans-serif;
+}
+
+.advantages__picture {
+  margin-top: 20px;
+  height: 381px;
+  background: url("../img/editor@1X.png");
+  background-size: 716px 381px;
+}
+
+.pricing {
+  background-color: #4b3b4e;
+  color: white;
+  padding: 50px 10px 93px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pricing__line {
+  background-color: #645766;
+  height: 2px;
+  width: 90%;
+  max-width: 780px;
+  display: inline-block;
+}
+
+.pricing__title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 42px;
+  padding-bottom: 33px;
+  padding-top: 58px;
+}
+
+.pricing-items-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.pricing-item {
+  margin: 14px 14px 0;
+  height: 457px;
+  width: 257px;
+  background: rgba(95, 81, 97, 0.3);
+  position: relative;
+}
+
+.pricing-item__title {
+  height: 58px;
+  text-align: center;
+  padding-top: 39px;
+  font-size: 24px;
+  background: rgba(104, 91, 106, 0.3);
+}
+
+.pricing-item__title--bigger {
+  background: rgba(58, 45, 61, 0.3);
+  height: 66px;
+  padding-top: 45px;
+}
+
+.pricing-item__price {
+  padding-top: 24px;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.pricing-item__price:first-letter {
+  font-weight: 400;
+}
+
+.pricing-item__price--bigger {
+  font-size: 83px;
+  padding-top: 3px;
+}
+
+.pricing-item__first-text {
+  padding: 12px 0 26px;
+  color: #8f8691;
+  font-size: 14px;
+}
+
+.pricing-item__first-text--bigger {
+  padding: 7px 0 35px;
+}
+
+.pricing-item__line {
+  display: inline-block;
+  height: 5px;
+  width: 60px;
+  background-color: #8d81ac;
+}
+
+.pricing-item__second-text {
+  padding: 24px 20px 0;
+  line-height: 26px;
+  color: #d0cbd0;
+}
+
+.pricing-item__second-text--bigger {
+  padding-top: 29px;
+  line-height: 32px;
+}
+
+.pricing-item__button {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #776b79;
+  color: #d0cbd0;
+  border: none;
+  padding: 12px 37px;
+  border-radius: 100px;
+  position: absolute;
+  left: 48px;
+  bottom: 38px;
+}
+
+.pricing-item__button:hover {
+  background-color: #d0cbd0;
+  color: #786b79;
+}
+
+.pricing-item__button--bigger {
+  padding: 16.5px 49px;
+  font-size: 16px;
+  left: 51px;
+  bottom: 47px;
+}
+
+.pricing-item--bigger {
+  margin: 14px 0 0;
+  background: rgba(65, 51, 68, 0.3);
+  height: 560px;
+  width: 291px;
+}
+
+@media (max-width: 319px) {
+  body {
+    width: 320px;
+  }
+}
+
+@media (min-width: 481px) {
+  body .container header .headerNav {
+    padding-top: 22px;
+    align-items: start;
+    height: 118px;
+  }
+  body .container .aboutFork .aboutForkFlex .blockClients {
+    width: 100%;
+    max-width: 315px;
+  }
+  body .container header .headerNav__menu .menuList li a {
+    padding: 0 2.2vw 0;
+  }
+  body .container header .headerNav__menu {
+    top: 70%;
+    left: 0;
+    display: block;
+    text-align: center;
+  }
+  body .container header .forkitoButton--after {
+    font-size: 21px;
+    margin-top: -33px;
+    padding: 21px 63px;
+  }
+  .headerNav__logoText {
+    color: #8d81ac;
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    margin-left: 17px;
+    display: inline-block;
+  }
+  .revolutionary {
+    padding-bottom: 97px;
+  }
+  .revolutionary__text--under-button {
+    padding-top: 15px;
+    padding-bottom: 84px;
+  }
+  .revolutionary__text--big {
+    display: inline-block;
+    font-size: 41px;
+  }
+  .revolutionary__text--small {
+    display: inline-block;
+    font-size: 21px;
+    padding: 9px 24px 12px;
+    line-height: 32px;
+  }
+  .revolutionary-counter-item--last {
+    margin: 21px 5px 0;
+  }
+  .advantages {
+    padding-left: 10px;
+    padding-bottom: 23px;
+  }
+  .advantages__title {
+    padding: 46px 42px 58px 32px;
+    font-size: 40px;
+  }
+  .advantages-item {
+    padding: 0 36px 54px 20px;
+    display: flex;
+    text-align: left;
+  }
+  .advantages-item__img {
+    width: 111px;
+    flex-shrink: 0;
+    text-align: center;
+  }
+  .advantages-item__big-text {
+    padding: 0 0 10px 24px;
+  }
+  .advantages-item__small-text {
+    padding-left: 24px;
+    font-size: 17px;
+    font-weight: 300;
+  }
+  .advantages__picture {
+    margin-top: 0;
+    height: 519px;
+    background: url("../img/editor@1X.png");
+    background-size: 977px 519px;
+  }
+  .pricing {
+    background-color: #4b3b4e;
+    background-image: url("../img/back.png");
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+  }
+  .pricing__line {
+    background-color: #645766;
+    height: 2px;
+    width: 80%;
+    display: inline-block;
+  }
+  .pricing__title {
+    font-size: 44px;
+    padding-bottom: 46px;
+  }
+  .pricing-item {
+    margin: 0 14px 30px;
+  }
+  .pricing-item--last {
+    margin: 58px 11px 0 11px;
+  }
+  .pricing-item--bigger {
+    margin: 14px 0 0;
+  }
+}
+
+@media (min-width: 993px) {
+  body .container header .headerNav__menu {
+    position: static;
+    margin: 10px 0 0 18%;
+  }
+  .container header .headerNav .forkitoButton {
+    font-size: 16px;
+    padding: 10px 37px;
+  }
+  body .container header .headerNav__menu .menuList li a {
+    padding: 0 10px 0;
+  }
+  body .container header .headerNav {
+    height: 100px;
+    padding-top: 29px;
+  }
+  body .container .aboutFork .aboutForkFlex .blockClients {
+    padding-bottom: 60px;
+  }
+  .revolutionary {
+    padding-bottom: 72px;
+  }
+  .revolutionary__text--under-button {
+    padding-bottom: 53px;
+  }
+  .revolutionary__text--big {
+    font-size: 54px;
+  }
+  .revolutionary__text--small {
+    font-size: 21px;
+    padding: 6px 130px 10px;
+  }
+  .advantages {
+    padding-top: 70px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .advantages__title {
+    padding: 0 0 58px 0;
+    font-size: 48px;
+    float: right;
+    width: 55%;
+  }
+  .advantages-item {
+    padding: 28px 0 12px 0;
+    width: 43%;
+  }
+  .advantages__picture {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 56%;
+  }
+  body .container .aboutFork {
+    background-color: #4b3b4e;
+    margin-bottom: -1px;
+    padding-top: 90px;
+  }
+  .pricing {
+    background-color: #4b3b4e;
+    background-size: 100% 100%;
+  }
+  .pricing-items-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .pricing__title {
+    font-size: 47px;
+    padding-top: 73px;
+    padding-bottom: 75px;
+  }
+  .pricing-item {
+    margin: 50px 7px 0;
+  }
+  .pricing-item--last {
+    margin: 50px 7px 0;
+  }
+  .pricing-item--bigger {
+    margin: 0 7px 0;
+  }
+}
+
+@media (min-width: 1201px) {
+  body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+  }
+}
+
+.container {
+  width: 100%;
+}
+
+.container header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container header .headerNav {
+  width: 100%;
+  position: relative;
+  background-color: #27262a;
+  color: #ffffff;
+  height: 103px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.container header .headerNav__logoImg {
+  color: #8d81ac;
+  background: url("../img/LogoHeader.png");
+  background-size: cover;
+  width: 43px;
+  height: 41px;
+  background-repeat: no-repeat;
+}
+
+.container header .headerNav__menu {
+  background-color: #fafafa;
+  color: #444444;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  display: none;
+  margin: 0 10px;
+  width: 94%;
+}
+
+.container header .headerNav__menu--active320 {
+  display: block;
+}
+
+.container header .headerNav__menu .menuList {
+  background-color: #333333;
+  list-style-type: none;
+  padding-bottom: 10px;
+}
+
+.container header .headerNav__menu .menuList li {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: #ffffff;
+  border-bottom: 2px solid #3B3B3B;
+}
+
+.container header .headerNav__menu .menuList li a {
+  padding: 10px 24px;
+  line-height: 88px;
+  border-left: 12px solid #333333;
+}
+
+.container header .headerNav__menu .menuList li :hover {
+  color: #8d81ac;
+  border-left: 12px solid #8d81ac;
+}
+
+.container header .headerNav__toggleBar {
+  background: url("../img/burger-menu-icon.png");
+  background-size: cover;
+  width: 26px;
+  height: 21px;
+  filter: invert(1);
+}
+
+.container header .headerInfo {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: url("../img/headerInfo.png") 50% -200px;
+  text-align: center;
+}
+
+.container header .headerInfo h2 {
+  padding-top: 65px;
+  color: white;
+  line-height: 20px;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.container header .headerInfo h3 {
+  color: #8D81AC;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  padding: 20px 15px;
+}
+
+.container header .headerInfo h4 {
+  color: #848E97;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding-bottom: 404px;
+}
+
+.container header .forkitoButton--after {
+  margin-top: -20px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.container .aboutFork {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  background: url("../img/About_Fork.png") 50% 0;
+  background-repeat: no-repeat;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  padding-top: 61px;
+  margin-bottom: 49px;
+}
+
+.container .aboutFork h3 {
+  display: none;
+}
+
+.container .aboutFork .aboutForkFlex {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 49px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.container .aboutFork .aboutForkFlex .blockClients {
+  width: 252px;
+}
+
+.container .aboutFork .aboutForkFlex .blockClients__description {
+  margin: 37px 0 40px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  font-family: "Lato";
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+}
+
+@media (max-width: 319px) {
+  .container {
+    width: 320px;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .container header .headerNav {
+    height: 100px;
+  }
+  .container header .headerNav__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightseagreen;
+    top: 77%;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .container header .headerNav__menu .menuList {
+    padding: 0px;
+    background-color: #27262a;
+    display: flex;
+  }
+  .container header .headerNav__menu .menuList li {
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    padding: 3px;
+  }
+  .container header .headerNav__menu .menuList li a {
+    color: #8D81AC;
+    padding: 10px 21px;
+    line-height: 20px;
+    border: none;
+  }
+  .container header .headerNav__menu .menuList li :hover {
+    border: 0;
+    color: white;
+  }
+  .container header .headerNav__toggleBar {
+    display: none;
+  }
+  .container .aboutFork {
+    font-weight: 700;
+    font-size: 42px;
+  }
+  .container .aboutFork h3 {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    color: #a291a5;
+    text-align: center;
+    margin: 0 80px 0;
+    padding-bottom: 40px;
+  }
+  .container .aboutFork .aboutForkFlex {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .container header .headerNav {
+    height: 118px;
+  }
+  .container header .headerNav__menu {
+    position: static;
+    width: fit-content;
+  }
+  .container header .headerNav__menu .menuList {
+    display: flex;
+  }
+  .container header .headerNav__menu .menuList li {
+    display: block;
+    /* Отображать как строчный элемент */
+  }
+  .container header .headerNav__toggleBar {
+    display: none;
+  }
+  .container .aboutFork .aboutForkFlex {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container header .headerNavigation {
+    font-weight: 500;
+    font-size: 24px;
+    height: 97px;
+  }
+  .container header .headerNavigation .header__logo {
+    margin-right: 20px;
+  }
+  .container header .headerNavigation .headerNavigation__navigathion {
+    display: none;
+  }
+  .container header .headerNavigation__toggle-button {
+    display: none;
+  }
+  .container header .advertisement {
+    height: 649px;
+    padding-left: 30px;
+    padding-top: 2px;
+  }
+  .container header .advertisement h2 {
+    font-weight: 700;
+    font-size: 62px;
+  }
+  .container header .advertisement h3 {
+    display: block;
+    font-weight: 700;
+    font-size: 38px;
+  }
+  .container .productMenuWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .container .productMenuWrapper .productsItem {
+    height: 400px;
+    display: block;
+  }
+  .container .productMenuWrapper .productsItem__img {
+    font-weight: 700;
+    font-size: 43px;
+  }
+  .container .productMenuWrapper .productsItem__addBlock {
+    display: none;
+  }
+  .container .footer__contacts {
+    margin: 40px 30px 37px 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16px;
+  }
+}
