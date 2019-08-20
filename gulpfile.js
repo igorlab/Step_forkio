@@ -78,7 +78,10 @@ gulp.task("sass", function() {
     return gulp.src(path.src.style)
         .pipe(plumber())
         .pipe(concat('styles.scss'))
-        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+        .pipe(sass({
+            outputStyle: 'expanded',
+            includePaths: require('node-normalize-scss').includePaths
+        }).on('error', sass.logError))
         //.pipe(sourcemaps.write('.'))
         .pipe(autoprefixer({
             overrideBrowserslist: ['last 2 versions'],
@@ -93,7 +96,10 @@ gulp.task("sass-dev", function() {
     return gulp.src(path.src.style)
         .pipe(plumber())
         .pipe(concat('styles.scss'))
-        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+        .pipe(sass({
+            outputStyle: 'expanded',
+            includePaths: require('node-normalize-scss').includePaths
+        }).on('error', sass.logError))
 
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest(path.dist.css))
